@@ -1,0 +1,37 @@
+
+
+
+hr {
+    border:1px solid rgb(235, 235, 235);
+}
+
+.commentviews ul {
+    padding-left: 0px;
+}
+
+.commentboxs textarea {
+    display: block;
+    width: 1000px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 15px 500px 15px 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    color: rgb(41, 41, 41);
+    font-style: inherit;
+    font-variant: inherit;
+    font-stretch: inherit;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    resize: none;
+    height: 200px;
+}
+
+.commentok button {
+    font-size: 17px;
+}

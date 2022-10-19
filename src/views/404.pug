@@ -1,0 +1,27 @@
+extends ./base
+block content
+    script(type='text/javascript').
+        alert('check Id/password');
+    if errorMessage
+        span onclick=errorMessage
+    .login_login
+        .login_loginbox
+            form(method="POST" class="login_form")
+                .login_home
+                    button(type='button' onclick="location.href='/';") Home
+                input(type="text", name="id",required,placeholder="Input Id")
+                br
+                input(type="password", name="password",required,placeholder="Input Password")
+                br
+                input(type="submit", id="loginbtn", value="Login")
+                .login_text
+                    a(href='/join') 회원가입
+                    
+            .login_icon
+                br
+                br
+                button.btn-social-login1(onclick="location.href='/user/github/start';")
+                    i.xi-2x.xi-github
+
+                button.btn-social-login2(onclick="location.href='/user/kakao/start';")
+                    i.xi-2x.xi-kakaotalk.text-dark

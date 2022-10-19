@@ -1,0 +1,25 @@
+extends base
+include mixins/installer
+block content
+    .outer
+        .inner-list
+            .inner
+                h2 1
+            .inner
+                h2 2
+            .inner
+                h2 3
+        .button-list
+            button.button-left &lt;
+            button.button-right &gt;
+    hr
+    label(for="rank-select") Filter
+    select(id="rank-select",name="filter")
+        option(value="like") Like
+        option(value="view") Views
+        option(value="date") latest
+    ul.rank_container
+    
+block script
+    script(src="/static/js/js/home.js")
+    script(src="/static/js/js/rank.js") 

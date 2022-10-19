@@ -1,0 +1,21 @@
+extends ../base
+block content
+    .editform
+        form(method="POST",enctype="multipart/form-data" class="edit_form")
+            .edit_home
+                button(type='button' onclick="location.href='/';") Home
+            if errorMessage
+            .errormess
+                span=errorMessage
+            label(for="1") 프로필 사진
+            input(type="file" name="avatar" accept="image/*")
+            label(for="2") 아이디
+            input(type="text" name="id",value=user.id,placeholder="Input Id")
+            if !user.socialOnly
+                label(for="3") 이메일
+                input(type="text" name="email",value=user.email,placeholder="Input Email")
+            label(for="4") 이름
+            input(type="text" name="username",value=user.username,placeholder="Input Username")
+            input(id="submit" type="submit" value="Edit Profile")
+            if !user.socialOnly
+                a(href="change-password") Change Password &rarr;

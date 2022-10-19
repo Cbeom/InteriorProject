@@ -1,0 +1,22 @@
+extends ../base
+block content
+    .user_see_login
+        .user_see_loginbox
+            form.user_see_form
+                .user_see_home
+                    button(type='button', onclick="location.href='/';") Home
+                    div.user
+                        br
+                        br
+                        img(src="/"+user.avatarUrl,style="width:100px")
+                        br
+                        br
+                        h3 이름
+                        h3=user.username
+                        br
+                        h3 email
+                        h3=user.email
+    section.user_installer_content
+        .user_installer_item
+            img(src=user.Installer[0].resulturl)
+            span=user.Installer[0].title

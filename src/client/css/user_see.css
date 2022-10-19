@@ -1,0 +1,43 @@
+.user_see_login {
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.user_see_loginbox {
+    text-decoration-line: none;
+    background: #FFFFFF;
+    width: 310px;
+    height: 500px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.user_see_home {
+    width: 55%;
+    margin: auto;
+    padding: 60px;
+}
+
+.user_see_loing text {
+    padding-left: 3px;
+    padding-top: 12px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.user h3 {
+    font-size: 17px;
+    text-align: center;
+}
+
+.user_see_home button {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+

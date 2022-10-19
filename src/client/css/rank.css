@@ -1,0 +1,19 @@
+#rank-select {
+    padding: 10px 15px;
+    background-color: white;
+    border: 5px;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+
+#rank-select option{
+    font-size: large;
+    font-weight: bolder;
+}
+
+label {
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}

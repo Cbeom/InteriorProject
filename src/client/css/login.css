@@ -1,0 +1,98 @@
+.login_login {
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.login_loginbox {
+  text-decoration-line: none;
+  background: #FFFFFF;
+  width: 310px;
+  height: 500px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding-bottom: 100px;
+}
+
+.login_home {
+  width: 55%;
+  margin : auto;
+  padding: 60px;
+}
+
+.login_form input {
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+#loginbtn {
+  background: #d4d4d4;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  align-items: center;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+}
+
+.login_text {
+  padding-left: 3px;
+  
+  text-align: left;
+  font-size: 14px;
+  line-height: 21px; 
+}
+
+.login_home button {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+  border: 0;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.login_text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-social-login1 {
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s;
+  outline: 0;
+  border: 1px solid transparent;
+  padding: .5rem !important;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #24292E;
+  cursor: pointer;
+  margin-right: 3px;
+}
+
+.btn-social-login2 {
+  text-decoration: none;
+  color: inherit;
+  transition: all .2s;
+  outline: 0;
+  border: 1px solid transparent;
+  padding: .5rem !important;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #FFEB00;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.login_icon .text-dark { color: #343a40!important; }
+

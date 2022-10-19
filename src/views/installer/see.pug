@@ -1,0 +1,48 @@
+extends ../base
+block content
+    if installer
+        div.installer(data-installer-id=installer._id)
+            img(src=installer.resulturl,width="500px").installer__img
+            h3=installer.title
+            a(href="/user/"+installer.owner._id)=installer.owner.username
+            br
+            .commentviews
+                ul
+                    li
+                        small views: #{installer.meta.view <= 0 ? `${installer.meta.view} view` : `${installer.meta.view} views`}
+                    li
+                        small like: #{installer.meta.like <= 0 ? `${installer.meta.like} like` : `${installer.meta.like} likes`}
+                        if loggedIn
+                            button.installer__like(data-user-id=user._id)
+                                i.fas.fa-heart
+            br
+            small #{new Date(installer.createAt).toLocaleString("ko-kr",{weekday:"long", year:"numeric", month:"2-digit", day:"2-digit"})}
+            hr
+            if loggedIn
+                if String(installer.owner._id)===String(user._id)
+                    a(href="delete-installer") DeleteInstaller &rarr;
+                    br
+                    a(href=`/installer/${installer._id}/edit`) EditInstaller &rarr;
+                br
+                .commentboxs
+                    form(method="POST").comment
+                        textarea(cols="30", rows="10",placeholder="Write your comment...").comment__text
+                        .commentok
+                            div.comment__button
+                                button Add Comment
+                div.comment__container
+                    ul
+                        each item in installer.comment.reverse()
+                            if item
+                                li.comment__list(data-comment-id=item._id)
+                                    i.fas.fa-comment
+                                    span.comment__list__txt=item.text
+                                    if loggedIn
+                                        if String(item.owner._id) === String(user._id)
+                                            button.comment__list__delBtn ❌
+                                            button.comment__list__editBtn ✅
+block script
+    script(src="/static/js/js/view.js")
+    script(src="/static/js/js/comment.js")
+    script(src="/static/js/js/register.js")
+    

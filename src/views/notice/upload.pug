@@ -1,0 +1,12 @@
+extends ../base
+
+block content
+    form(method="POST" enctype="multipart/form-data")
+        .upload
+            label(for="avatar")
+            br
+            input(id="title" type="text" name="title" placeholder="Input title",required,maxlength="20")
+            br
+            textarea(placeholder="input write notice",name="content",cols="30",rows="10",id="notice")
+            input(type="file" id="avatar" name="avatar" accept="image/jpg")
+            input(id="submit" type="submit" value="submit")

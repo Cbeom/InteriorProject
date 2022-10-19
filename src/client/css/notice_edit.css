@@ -1,0 +1,37 @@
+.notice_edit #title {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 3px 0;
+    font-size: 20px;
+    width: 99%;
+}
+
+.notice_edit #avatar {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 3px 0;
+    font-size: 20px;
+    width: 99%;
+    height: 4%;
+}
+
+.notice_edit #submit {
+    padding: 7px 18px;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.notice_edit textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 3px 0;
+    font-size: 20px;
+    width: 99%;
+    height: 70%;
+    resize: none;
+}

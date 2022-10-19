@@ -1,0 +1,15 @@
+extends ../base
+
+block content
+    br
+    br
+    br
+    .reportbox
+        form(method="POST")
+            h3 report
+            .reportbox1
+                input(type="text", name="rtitle",placeholder="Input reason",required,maxlength="20")
+            .reportbox2
+                textarea(name="rcontent", cols="30", rows="10",required,id="report",placeholder="input write reason ")
+            input(id="submit" type="submit",value="submit")
+            input(id="submit" type="submit",value="back")

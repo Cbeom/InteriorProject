@@ -1,0 +1,30 @@
+.reportbox {
+    text-decoration-line: none;
+    background: #FFFFFF;
+    width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.reportbox #submit{
+    background-color: gray;
+    border-radius: 2px;
+    color: white;
+    
+}
+
+.reportbox1 input {
+    width: 248px;
+    padding-right: 1px;
+    margin-top: 25px;
+}
+
+.reportbox2 textarea {
+    margin-top: 5px;
+    width: 250px;
+    height: 300px;
+    resize: none;
+}

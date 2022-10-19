@@ -1,0 +1,7 @@
+mixin installer(item)
+    .list
+        a(href="/rank/"+item._id+"/create")
+            img(src=item.resulturl,width="100px").installer__img
+            h3=item.title
+            a(href="/user/"+item.owner._id)=item.owner.username
+            small #{new Date(item.createAt).toLocaleString("ko-kr",{weekday:"long", year:"numeric", month:"2-digit", day:"2-digit"})}

@@ -1,0 +1,9 @@
+extends ../base
+include ../mixins/rank_installer.pug
+
+block content
+    if userInstaller
+        //- 그냥 랭킹 출력
+        each item in userInstaller
+            +installer(item)
+    //- 이미지 출력(내가했던)

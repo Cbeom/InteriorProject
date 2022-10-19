@@ -1,0 +1,331 @@
+.section1 {
+    display: grid;
+    position: relative;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.drawingless {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 300px 1fr;
+}
+
+.function {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(235, 235, 235);
+    align-items: center;
+}
+
+
+.function_floor {
+    padding-bottom: 20px;
+
+}
+
+.function_floor #floorEraser {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.function_floor button {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.function_square {
+    padding-bottom: 20px;
+}
+
+.function_square button {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.function_square #squareEraser {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.function_circle {
+    padding-bottom: 20px;
+}
+
+.function_circle button {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+.function_allReset button {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.function_circle #circleEraser {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.function_straight #straightEraser {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.function_straight button {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.function_img #imgEraser {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.function_img button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.function_img #image1, #image2, #image3 {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+}
+
+#image10 {
+    width: 50px;
+}
+
+#image10, #image20, #image30 {
+    border-style: none;
+}
+
+#image11, #image12, #image13, #image14 {
+    border-style: none;
+}
+
+#image21, #image22, #image23, #image24 {
+    border-style: none;
+}
+
+#image31, #image32, #image33, #image34 {
+    border-style: none;
+}
+
+.image10, .image20, .image30 {
+    display: none;
+}
+
+.image10.active, .image20.active, .image30.active {
+    display: flex;
+}
+
+.function_text {
+    padding: 10px;
+}
+
+.function_text #textEraser {
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.function_text button {
+    margin-top: 20px;
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#selfloor {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+#selcolor {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+.function_eraser {
+    padding: 20px;
+}
+
+.function_eraser #eraser{
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.function_moving {
+    padding: 10px;
+}
+
+.function_moving #move{
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.function_reset {
+    padding: 20px;
+}
+
+.function_reset input {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.board {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+canvas {
+    position: absolute;
+    border: 1px solid #000;
+}
+
+#board_canvas {
+    padding-right: 1320px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#canvas {
+    z-index: 1;
+}
+
+#bg {
+    z-index: 0;
+}
+
+.board_button {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    padding-right: 170px;
+    border-top: 1px solid rgb(235, 235, 235);
+}
+
+.board_button button {
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#line-widht {
+    margin: 30px;
+}
+
+.save {
+    padding-right: 25px;
+}
+
+.container {
+    width: 250px;
+    margin: 50px auto;
+}
+
+ul.tabs {
+    list-style: none;
+    padding-left: 0px;
+}
+
+ul.tabs li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+ul.tabs li.current {
+    background: #ededed;
+    color: #222;
+}
+
+.tab-content {
+    height: 750px;
+    display: none;
+    background: white;
+    padding: 30px;
+    border: 1px solid #dedede;
+}
+
+.tab-content.current {
+    display: inherit;
+}

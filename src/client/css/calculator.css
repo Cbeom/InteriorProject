@@ -1,0 +1,135 @@
+
+
+.calculator {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    min-height: 100vh;
+    color: gray;
+    font-size: 15px;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+
+#caculator {
+    position: relative;
+    width: 95%;
+    max-width: 300px;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 4px;
+    box-shadow: 5px 5px 1rem rgba(0, 0, 0, .2);
+}
+
+#area-display {
+    position: relative;
+    width: 90%;
+    background: rgba(255, 255, 255, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    text-align: right;
+}
+
+#steps {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem 1.25rem .5rem;
+    font-size: 13px;
+    color: gray;
+}
+
+#steps.off {
+    opacity: 0;
+}
+
+#display {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    white-space: normal;
+    word-break: break-all;
+    padding: 0 1rem;
+    padding-bottom: 1.25rem;
+    background: transparent;
+    border: none;
+    text-align: right;
+    font-family: inherit;
+    font-size: 2rem;
+    color: #3f3f3f;
+    font-size: 27px;
+}
+
+#area-btn {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.nums {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 75%;
+
+}
+
+.num {
+    display: block;
+    width: 33.33%;
+    aspect-ratio: 1/1;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background: #707070;
+    font-size: inherit;
+    color: rgba(255, 255, 255, 1);
+}
+
+.num[data-val="-1"],
+.num[data-val="."] {
+    background: rgba(255, 255, 255, .1);
+    color: gray;
+}
+
+.ops {
+    position: relative;
+    width: 25%;
+}
+
+.op {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: rgba(255, 255, 255, .1);
+    border: 1px solid rgba(0, 0, 0, .2);
+    font-size: 1.3rem;
+    color: gray;
+}
+
+#reset {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: rgba(36, 55, 165, 0.1);
+    border: 1px solid rgba(0, 0, 0, .2);
+    font-size: 1rem;
+    color: gray;
+}
+
+#btn_result {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/.33;
+    background: rgba(93, 128, 241, 0.3);
+    border: 1px solid rgba(0, 0, 0, .2);
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    mix-blend-mode: hard-light;
+}

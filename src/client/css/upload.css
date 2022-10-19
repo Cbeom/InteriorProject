@@ -1,0 +1,78 @@
+.upload #title {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 15px 50px 15px 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid rgb(234, 235, 239);
+    color: rgb(41, 41, 41);
+    font-style: inherit;
+    font-variant: inherit;
+    font-stretch: inherit;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.upload #avatar {
+    padding: 7px 18px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+
+    
+}
+
+.upload #submit {
+    padding: 7px 18px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.upload #filter {
+    padding: 10px 15px;
+    background-color: white;
+    border: 5px;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.upload #filter option{
+    font-size: large;
+    font-weight: bolder;
+}
+
+
+
+.upload textarea {
+    display: block;
+    width: 98%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 15px 500px 15px 0px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid rgb(234, 235, 239);
+    color: rgb(41, 41, 41);
+    font-style: inherit;
+    font-variant: inherit;
+    font-stretch: inherit;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    resize: none;
+    height: 50em;
+}
+

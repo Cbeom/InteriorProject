@@ -1,0 +1,11 @@
+extends ../base
+include ../mixins/installer
+block content
+    link(rel="stylesheet", href="/static/js/css/styles.css")
+    form(method="GET")
+        input(id="text", type="text",name="title",placeholder="Search Title")
+        input(id="submit", type="submit", value="Search")
+    hr
+    if installer
+        each item in installer
+            +installer(item)

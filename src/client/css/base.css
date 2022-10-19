@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+footer {
+    background-color: rgb(235, 235, 235);
+    align-items: center;
+    height: 100px;
+}
+
+.footer_content {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.navbar {
+    display: flex;
+    margin: 0 auto;
+    width: 1024px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.base_home {
+    padding-right: 20px;
+}
+
+.base_home button {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    border: 0;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.base_menu {
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    margin-right: 150px;
+}
+
+.base_menu li {
+    padding: 8px 12px;
+}
+
+.section {
+    margin: 0 auto;
+    width: 1024px;
+    height: 175em;
+    box-sizing: border-box;
+   /* border-right: 1px solid rgb(235, 235, 235);
+    border-left: 1px solid rgb(235, 235, 235); */
+}
+
+.section form {
+    height: 100%;
+}
+
+.base_logout {
+    display: flex;
+    cursor: pointer;
+    margin-left: 183px;
+    margin-top: 10px;
+}
+
+.base_login {
+    display: flex;
+    font-size: 15px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.base_login_img {
+    position: relative;
+    text-align: center;
+    height: 30px;
+    width: 95px;
+}
+
+.base_login_meun {
+    margin-top: 25px;
+    display: flex;
+    padding: 8px 12px;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 10px;
+}

@@ -1,0 +1,87 @@
+
+@import "screen/interior.css";
+
+@import 'base.css';
+@import 'notice.css';
+@import 'home.css';
+
+@import 'user_see.css';
+@import 'change-password.css';
+@import 'user_edit.css';
+@import 'login.css';
+@import 'join.css';
+
+
+@import 'notice_see.css';
+@import 'notice_edit.css';
+@import 'report.css';
+@import 'upload.css';
+@import 'search.css';
+
+@import 'calculator.css';
+
+@import 'rank.css';
+@import 'installer_see.css';
+@import '404.css';
+
+@import 'map.css';
+
+.section {
+    margin: 0 auto;
+    width: 1024px;
+    height: 842px;
+    box-sizing: border-box;
+    
+}
+
+ul{
+    list-style: none;
+}
+.save__container.active
+{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    background-color:grey;
+    height:25%;
+    width:25%;
+    opacity: 1;
+    z-index: 9999;
+}
+
+main.active{
+    opacity: 0.3;
+}
+
+.save__container{
+    display:none;
+}
+
+
+button:focus,
+button{
+    border:none;
+    cursor:pointer;
+    /* background-color: inherit; */
+}
+
+.installer__like{
+    color:black;
+    transition: all .5s ease-in-out;
+}
+
+.clicked{
+    color:blue;
+    transform: scale(1.1);
+}
+
+button:focus,
+button{
+    border:none;
+    cursor:pointer;
+    /* background-color: inherit; */
+}
+
+
+

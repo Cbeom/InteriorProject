@@ -1,0 +1,168 @@
+extends ../base2.pug
+block content
+      .drawingless(data-paints=paints)
+        .function
+          .container
+            ul.tabs
+              li.tab-link.current(data-tab='tab-1') 평면
+              li.tab-link(data-tab='tab-2') 가구
+              li.tab-link(data-tab='tab-3') 도구
+            #tab-1.tab-content.current
+              select#selfloor
+                option(value='') 바닥
+                option(value='1') 장판
+                option(value='2') 대리석
+              select#selcolor
+                option(value='') 도형색상
+                option(value='rgba(255,255,255)') 하양
+                option(value='rgba(0,0,0)') 검정
+                option(value='rgba(255,0,0)') 빨강
+                option(value='rgba(255,128,0)') 주황
+                option(value='rgba(255,255,0)') 노랑
+                option(value='rgb(0,255,0)') 초록
+                option(value='rgba(0,0,255)') 파랑
+                option(value='rgba(0,0,128)') 남
+                option(value='rgba(127,0,255)') 보라
+              input#line-widht(type='range' min='1' max='4'   value='1' step='0.5')
+              .function_floor
+                button#jsFloor 바닥
+                button#floorEraser undo
+              .function_square
+                button#jsSquare 사각형
+                button#squareEraser undo
+              .function_circle
+                button#jsCircle 원
+                button#circleEraser undo
+              .function_straight
+                button#jsStraight 직선
+                button#straightEraser undo
+              .function_allReset
+                button#directInput(type='button'  onclick="location.href='javascript:doDisplay();    ' ")
+                  | 직접
+                  | 입력
+              #myDIV
+                form
+                  fieldset(name='#')
+                    legend 사각형 직접 입력하기
+                    input#squareWidth(type='number' name='#'  placeholder='가로 길이' value=' ')
+                    br
+                    input#squareheight(type='number' name='#'   placeholder='세로 길이' value=' ')
+                    br
+                    button#ok 확인
+                br
+                form
+                  fieldset(name='#')
+                    legend 원 직접 입력하기
+                    input#circleWidth(type='number' name='#'  placeholder='반지름 길이' value=' ')
+                    br
+                    button#okay 확인
+            #tab-2.tab-content
+              .function_img
+                button#jsImg 이미지
+                button#imgEraser undo
+                .furniture
+                  .furniture_1
+                    button#image11
+                      img(src='http://localhost:5555/uploads/의자1.JPG')
+                    button#image1(onclick='imagemenu1();') 회전
+                    .image10(onclick='imagemenu1();')
+                      button#image11
+                        img(src='http://localhost:5555/uploads/의자1.JPG')
+                      button#image12
+                        img(src='http://localhost:5555/uploads/의자2.JPG')
+                      button#image13
+                        img(src='http://localhost:5555/uploads/의자3.JPG')
+                      button#image14
+                        img(src='http://localhost:5555/uploads/의자4.JPG')
+                  .furniture_2
+                    button#image21
+                      img(src='http://localhost:5555/uploads/책상1.JPG')
+                    button#image2(onclick='imagemenu2();') 회전
+                    .image20(onclick='imagemenu2();')
+                      button#image21
+                        img(src='http://localhost:5555/uploads/책상1.JPG')
+                      button#image22
+                        img(src='http://localhost:5555/uploads/책상2.JPG')
+                      button#image23
+                        img(src='http://localhost:5555/uploads/책상3.JPG')
+                      button#image24
+                        img(src='http://localhost:5555/uploads/책상4.JPG')
+                  .furniture_3
+                    button#image31
+                      img(src='http://localhost:5555/uploads/침대1.JPG')
+                    button#image3(onclick='imagemenu3();') 회전
+                    .image30(onclick='imagemenu3();')
+                      button#image31
+                        img(src='http://localhost:5555/uploads/침대1.JPG')
+                      button#image32
+                        img(src='http://localhost:5555/uploads/침대2.JPG')
+                      button#image33
+                        img(src='http://localhost:5555/uploads/침대3.JPG')
+                      button#image34
+                        img(src='http://localhost:5555/uploads/침대4.JPG')
+            #tab-3.tab-content
+              .function_text
+                button#jsText 텍스트
+                button#textEraser undo
+              .function_eraser
+                button#eraser 지우개
+              .function_moving
+                button#move 옮기기
+              .function_reset
+                input#clear(type='button' value='초기화')
+          .calculator
+            section#caculator
+              article#area-display
+                #steps.off 0
+                #display 0
+              article#area-btn
+                .nums
+                  button.num(data-val='7') 7
+                  button.num(data-val='8') 8
+                  button.num(data-val='9') 9
+                  button.num(data-val='4') 4
+                  button.num(data-val='5') 5
+                  button.num(data-val='6') 6
+                  button.num(data-val='1') 1
+                  button.num(data-val='2') 2
+                  button.num(data-val='3') 3
+                  button.num(data-val='-1') +/-
+                  button.num(data-val='0') 0
+                  button.num(data-val='.') .
+                  button#btn_result =
+                .ops
+                  button#reset C
+                  button.op(data-val='/') ÷
+                  button.op(data-val='*') ×
+                  button.op(data-val='-') -
+                  button.op(data-val='+') +
+        .board
+          .board_button
+            .exit
+              button(type='button')   나가기
+            .save
+              button(type='button').save_btn   저장
+          #board_canvas
+            canvas#canvas(width='1300' height='801')
+            canvas#bg(width='1300' height='801')
+            canvas#txt(width='1300' height='801')
+            canvas#floor1(width='1300' height='801')
+            canvas#floor2(width='1300' height='801')
+            canvas#img1(width='1300' height='801')
+          
+block script
+  script(src='http://code.jquery.com/jquery-3.5.1.min.js')
+  script(src="/static/js/js/installer.js")
+  script(src="/static/js/js/calculator.js")
+  script(src="/static/js/js/save.js")
+  if findInstaller
+    script(src="/static/js/js/paint.js") 
+  script(type='text/javascript').
+        function doDisplay() {
+          var con = document.getElementById("myDIV");
+          if (con.style.display == 'none') {
+              con.style.display = 'block';
+          } else {
+              con.style.display = 'none';
+          }
+        }

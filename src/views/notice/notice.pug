@@ -1,0 +1,25 @@
+extends ../base
+include ../mixins/notice.pug
+
+block content
+        // notice 부분
+        .community_notice
+            .community_board
+                strong 게시판
+                .community_list
+                    .community_list_head
+                        .id 번호
+                        .title 제목
+                        .view 조회수
+                        .date 작성일
+                    .community_list_body
+                        section.notice_container
+                        section.page__cotainer
+                        script(src="/static/js/js/page.js")
+                .community_page
+                    form.community_form
+                        .community_search
+                            a(href="/notice/search") 검색
+                            img(src='https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png')
+                            br
+                            button(type='button' onclick="location.href='/notice/upload';") 작성 

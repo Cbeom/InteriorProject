@@ -1,0 +1,27 @@
+extends ../base
+
+block content
+    .notice_catagori
+        h4 Category
+    .notice_title
+        =notice.title 
+        br
+    .notice_information2
+        if notice.image
+            img(src="/"+notice.image, width="500",height="500")
+        br
+        =notice.description
+    .notice_abc
+        //small username : #{user.username}
+    .notice_information1
+        small rating : #{notice.meta.rating}
+        br
+        small views : #{notice.meta.views}
+    .notice_information
+        a(href=`${notice.id}/edit`) Edit notice &rarr;
+        br
+        a(href=`${notice.id}/delete`) Delte notice &rarr;
+        br
+        a(href=`${notice.id}/report`) report notice &rarr;
+
+
